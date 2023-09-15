@@ -1,0 +1,142 @@
+/* Universal element */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Variables */
+:root{
+  --dark: #01213f;
+  --white: #f3f3f3;
+}
+
+/* body, a and p elements are used on the whole html */
+body {
+    background-color: var(--white);
+}
+
+a {
+    color: var(--dark);
+    text-decoration: underline;
+}
+
+p {
+    font-size: 16px;
+}
+
+/* Elements for header design */
+header {
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--white);
+    color: var(--dark);
+    display: inline-block;
+    width: 100%;
+    border: 2px solid red;
+}
+#greendot {
+  color: rgb(68, 184, 68);
+  font-size: 37px;
+}
+
+h1 {
+    display: inline-block;
+    font-size: 33px;
+}
+
+nav {
+    padding-top: 15px;
+    float: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-right: 25px;
+}
+
+li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+/* Main section elements and atributes */
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 77px;
+    color: var(--dark);
+}
+
+.intro {
+    padding-right: 10vw;
+    padding-top: 7vw;
+    margin-right: 15vw;
+    margin-left: 15vw;
+    border: 2px solid red;
+}
+
+#personal-into {
+    margin-top: 1vw;
+    padding-left: 2vw;
+    padding-right: 8vw;
+    margin-bottom: 3vw;
+    font-size: 21px;
+    border: 2px solid orange;
+}
+
+/* Work and success stories section */
+#main-project-title {
+    margin-bottom: 10px;
+    text-align: left;
+    font-size: 17px;
+}
+
+.content {
+    margin-right: 3vw;
+    display: inline-block;
+    margin-left: 3vw;
+    border: 2px solid red;
+} 
+
+.main-project {
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    border: 2px solid orange;
+}
+
+img {
+    width: 95%;
+}
+
+.image-text {
+    border: 2px solid brown;
+    width: 95%;
+}
+
+.border {
+    border: 2px solid black;
+}
+
+.project-two{
+    margin-bottom: 20px;
+    width: 45%;
+    height: 300px;
+    display: flex;
+    border: 2px solid orange;
+    float: left;
+}
+
+.project-three{
+    margin-bottom: 20px;
+    width: 45%;
+    height: 300px;
+    display: flex;
+    border: 2px solid orange;
+    float: right;
+}
+
+.image-text-p2 {
+    border: 2px solid brown;
+    width: 100%;
+    justify-content:baseline;
+}
