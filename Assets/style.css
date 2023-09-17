@@ -14,6 +14,8 @@
 /* body, a and p elements are used on the whole html */
 body {
     background-color: var(--white);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1vw;
 }
 
 a {
@@ -21,66 +23,59 @@ a {
     text-decoration: underline;
 }
 
-p {
-    font-size: 16px;
-}
-
 /* Elements for header design */
 header {
-    padding: 20px;
-    font-family: Arial, Helvetica, sans-serif;
     background-color: var(--white);
     color: var(--dark);
-    display: inline-block;
     width: 100%;
-    border: 2px solid red;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-top: 3.5em;
 }
+
+.site-padding {
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
 #greendot {
-  color: rgb(68, 184, 68);
-  font-size: 37px;
+    color: rgb(10, 177, 243);
 }
 
 h1 {
-    display: inline-block;
-    font-size: 33px;
+    display: flex;
+    font-size: 3.5em;
 }
 
-nav {
-    padding-top: 15px;
-    float: right;
+.nav-style {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    margin-right: 25px;
+    font-size: 1.4em;
+    display: flex;
+    justify-content: flex-end;
 }
 
 li {
-    display: inline-block;
-    margin-left: 25px;
+    margin-right: 3%;
 }
-
 /* Main section elements and atributes */
 
 h2 {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 77px;
+    font-size: 6.5em;
     color: var(--dark);
 }
 
 .intro {
-    padding-right: 10vw;
-    padding-top: 7vw;
-    margin-right: 15vw;
-    margin-left: 15vw;
-    border: 2px solid red;
+    padding-bottom: 8em;
+    padding-top: 11em;
 }
 
-#personal-into {
-    margin-top: 1vw;
-    padding-left: 2vw;
-    padding-right: 8vw;
-    margin-bottom: 3vw;
-    font-size: 21px;
-    border: 2px solid orange;
+.personal-into {
+    font-size: 1.7em; 
+    color: rgb(4, 111, 153);
+    padding: 3vw;
+    width: 55%;
+    max-width: 100%;
 }
 
 /* Work and success stories section */
@@ -94,35 +89,33 @@ h2 {
     margin-right: 3vw;
     display: inline-block;
     margin-left: 3vw;
-    border: 2px solid red;
 } 
 
 .main-project {
     margin-bottom: 20px;
     width: 100%;
     display: flex;
-    border: 2px solid orange;
 }
 
 img {
-    width: 95%;
+    width: 100%;
 }
 
-.image-text {
-    border: 2px solid brown;
-    width: 95%;
-}
-
-.border {
+.image-one-text {
+    width: 100%;
+    padding-left: 5%;
+    font-size: 1.7em; 
+    color: var(--dark);
     border: 2px solid black;
+    line-height: 150%;
 }
+
 
 .project-two{
     margin-bottom: 20px;
     width: 45%;
     height: 300px;
     display: flex;
-    border: 2px solid orange;
     float: left;
 }
 
@@ -131,12 +124,34 @@ img {
     width: 45%;
     height: 300px;
     display: flex;
-    border: 2px solid orange;
     float: right;
 }
 
 .image-text-p2 {
-    border: 2px solid brown;
     width: 100%;
     justify-content:baseline;
+}
+
+@media screen and (max-width: 767px){
+    h2 {
+    font-size: 6.5em;
+    }
+    nav {
+        flex-direction: column;
+    }
+    p {
+    font-size: 1.7em; 
+    }
+}
+
+@media screen and (max-width: 479px){
+    h2 {
+    font-size: 6.5em;
+    }
+    nav {
+        flex-direction: column;
+    }
+    p {
+    font-size: 1.7em;
+    }
 }
